@@ -7,7 +7,7 @@ $last_name = $_POST['last_name'];
 $contact_number = $_POST['contact_number'];
 $district = $_POST['district'];
 
-$query = "INSERT INTO customers (title, first_name, last_name, contact_number, district) 
+$query = "INSERT INTO customer (title, first_name, last_name, contact_no, district) 
           VALUES ('$title', '$first_name', '$last_name', '$contact_number', '$district')";
 $result = mysqli_query($connection, $query);
 
