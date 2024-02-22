@@ -9,7 +9,7 @@ $item_sub_category = $_POST['item_sub_category'];
 $quantity = $_POST['quantity'];
 $unit_price = $_POST['unit_price'];
 
-$query = "INSERT INTO items (item_code, item_name, item_category, item_sub_category, quantity, unit_price)
+$query = "INSERT INTO item (item_code, item_name, item_category, item_subcategory, quantity, unit_price)
           VALUES ('$item_code', '$item_name', '$item_category', '$item_sub_category', '$quantity', '$unit_price')";
 $result = mysqli_query($connection, $query);
 
